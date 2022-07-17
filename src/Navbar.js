@@ -35,22 +35,22 @@ const Navbar = () => {
           </button>
         </div>
 
-        {
-          showLinks && <div className="links-container show-container">
-            <ul className="links">
-              {
-                links.map((link) => {
-                  const { id, text, url } = link
-                  return (
-                    <li key={id}>
-                      <a href={url} className="link">{text}</a>
-                    </li>
-                  )
-                })
-              }
-            </ul>
-          </div>
-        }
+        <div className={
+          `${showLinks ? 'links-container show-container' : 'links-container'}`
+        }>
+          <ul className="links">
+            {
+              links.map((link) => {
+                const { id, text, url } = link
+                return (
+                  <li key={id}>
+                    <a href={url} className="link">{text}</a>
+                  </li>
+                )
+              })
+            }
+          </ul>
+        </div>
 
         <ul className="social-icons">
           {

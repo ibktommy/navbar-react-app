@@ -50,6 +50,17 @@ nav {
   transition: all ease .7s;
 } */
 
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all .4s ease
+}
+
+.show-container {
+  height: 20rem;
+
+}
+
 .links {
   display: flex;
   flex-direction: column;
