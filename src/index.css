@@ -15,6 +15,15 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: #353535;
+}
+
+ul {
+  list-style: none;
+}
+
 nav {
   padding: 2rem 3rem;
   box-shadow: rgba(99,99,99, .2) 0px 2px 8px 0px;
@@ -25,6 +34,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .nav-toggle {
@@ -32,4 +42,36 @@ nav {
   border: none;
   background: none;
   cursor: pointer;
+  color: blueviolet;
+}
+
+/* .nav-toggle:hover {
+  transform: rotate(90deg);
+  transition: all ease .7s;
+} */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.link {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: blueviolet;
+}
+
+.hidden {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
 }
